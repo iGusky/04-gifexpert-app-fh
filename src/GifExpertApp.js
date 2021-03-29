@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () =>{
+const GifExpertApp = ({ defaultCategories = [] }) =>{
 
   // const categorias = ['Evangelion', 'Sailor Moon', 'Star Wars'];
 
-  const [categorias, setCategorias] = useState(['Evangelion']);
+  const [categorias, setCategorias] = useState(defaultCategories);
 
   //const handleAdd = () => {
     //Primera forma de agregarlo
